@@ -1,0 +1,23 @@
+start:- write('Hello, Welcome to the guessing game'),
+	nl,
+       write('The point of the game is to guess between 1 and 100'),
+       nl,
+       write('The game will tell you if need to go higher or lower'),
+       nl,
+       write('When you guess the right number it will display how many trys it took you'),nl,
+
+       random(1,100,Z),
+
+
+      write('guess the number between 1 and 100: '),
+      read(Guess),
+
+      ( Guess \= Z -> loop(Guess,Z);fail).
+
+
+
+
+
+
+
+
